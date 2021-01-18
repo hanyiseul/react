@@ -8,11 +8,18 @@ import React from 'react';
 // 	);
 // }
 
-// export default Device;
- 
-function Device({ mydevice }) {
-    console.log(JSON.stringify(mydevice));
-    return <div>My { mydevice }</div>;
+function Device(data){
+	console.log(JSON.stringify(data));
+
+	return(
+		<div>my {data.mydevice},{data.myfavoritecharacter }</div>
+	);
 }
+
+ 
+// function Device({ mydevice, myfavoritecharacter  }) {
+//     console.log(JSON.stringify(myfavoritecharacter ));
+//     return <div>My { mydevice },{myfavoritecharacter }</div>;
+// }
  
 export default Device;
