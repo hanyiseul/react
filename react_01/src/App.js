@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 // import './App.css';
+import Device from './Device';
 
 // function App() {
 //   return (
@@ -24,7 +25,7 @@
 
 // export default App;
 
-import React from 'react'; // 리액트의 여러기능을 사용할 수 있게 해줌
+//import React, { Fragment } from 'react'; // Fragment 를 적용한 컴포넌트
  
 /* 컴포넌트 생성
 function 컴포넌트명(){ // 컴포넌트명 대문자로 작성
@@ -33,10 +34,31 @@ function 컴포넌트명(){ // 컴포넌트명 대문자로 작성
   );
 }
 */
-function App() { // 컴포넌트
-    return ( // return 괄호 없어도 됨
-      <div>hello</div>     
-    );
-}
+// function App() { // 컴포넌트
+//     return ( // return 괄호 없어도 됨
+//       /*<Fragment>
+//         hello
+//         <Device/>
+//       </Fragment> //감쌀 태그가 필요 없으면 Fragment 태그 사용 */
+//       <div className="everdevel">
+//         hello<br></br>
+//         {/*jsx에서는 단독 태그 허용x*/}
+//         <input name="input"></input>
+//         <Device/>
+//       </div>
+//     );
+// }
  
-export default App; // 다른 파일에서 이 컴포넌트를 import 할 수 있게 해줌
+// export default App; // 다른 파일에서 이 컴포넌트를 import 할 수 있게 해줌
+
+//props
+function App(){
+  return(
+    <div>
+      hello
+      <Device/>
+    </div>
+  );
+}
+
+export default App;
