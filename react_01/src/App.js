@@ -52,11 +52,16 @@ function 컴포넌트명(){ // 컴포넌트명 대문자로 작성
 // export default App; // 다른 파일에서 이 컴포넌트를 import 할 수 있게 해줌
 
 //props
+//props명="값"
 function App(){
   return(
     <div>
       hello
-      <Device/>
+      <Device mydevice="iPad Pro"/>
+      <Device mydevice="iPad Pro2"/>
+      <Device mydevice="iPad Pro3"/>
+      <Device mydevice="iPad Pro4"/>
+      <Device mydevice="iPad Pro5"/>
     </div>
   );
 }
